@@ -25,7 +25,7 @@ function App() {
     setChatHistory([...chatHistory, userMessage]);
 
     try {
-      const response = await fetch('https://koryfi_asistant_backend.railway.internal/api/chatbot', {
+      const response = await fetch('https://koryfiasistantbackend-production.up.railway.app/api/chatbot', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
